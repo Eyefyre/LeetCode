@@ -13,7 +13,7 @@ import java.util.Locale;
  *
  * @author Adam
  */
-public class Day_of_the_Week_1185 {
+public class Q1185_DayOfTheWeek {
 
     public static void main(String[] args) {
         int year = 1999;

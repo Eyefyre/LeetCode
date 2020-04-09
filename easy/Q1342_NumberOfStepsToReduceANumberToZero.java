@@ -9,7 +9,7 @@ package easy.done;
  *
  * @author Adam
  */
-public class Number_of_Steps_to_Reduce_a_Number_to_Zero_1342 {
+public class Q1342_NumberOfStepsToReduceANumberToZero {
 
     public static void main(String[] args) {
         System.out.println(numberOfSteps(123));

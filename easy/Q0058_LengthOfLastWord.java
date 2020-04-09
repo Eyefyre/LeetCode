@@ -9,7 +9,7 @@ package easy.done;
  *
  * @author Adam
  */
-public class Length_of_Last_Word_58 {
+public class Q0058_LengthOfLastWord {
 
     public static void main(String[] args) {
         String name = "Hello wordl";

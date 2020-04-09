@@ -9,13 +9,13 @@ package easy.done;
  *
  * @author Adam
  */
-public class To_lower_Case_709 {
+public class Q0069_SqrtX {
 
     public static void main(String[] args) {
-        System.out.println(toLowerCase("EELELDDLD DADKJHD"));
+        System.out.println(mySqrt(4));
     }
 
-    public static String toLowerCase(String str) {
-        return str.toLowerCase();
+    public static int mySqrt(int x) {
+        return (int) Math.sqrt((double) x);
     }
 }

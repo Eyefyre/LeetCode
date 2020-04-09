@@ -9,13 +9,13 @@ package easy.done;
  *
  * @author Adam
  */
-public class Defanging_an_IP_Address_1108 {
+public class Q0709_ToLowerCase {
 
     public static void main(String[] args) {
-        System.out.println(defangIPaddr(" "));
+        System.out.println(toLowerCase("EELELDDLD DADKJHD"));
     }
 
-    public static String defangIPaddr(String address) {
-        return address.replaceAll("\\.", "[.]");
+    public static String toLowerCase(String str) {
+        return str.toLowerCase();
     }
 }

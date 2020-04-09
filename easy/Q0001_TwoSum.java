@@ -9,7 +9,7 @@ package easy.done;
  *
  * @author Adam
  */
-public class Two_Sum_1 {
+public class Q0001_TwoSum {
 
   /*Given an array of integers, 
     return indices of the two numbers such that they add up to a specific target.

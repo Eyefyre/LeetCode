@@ -9,13 +9,16 @@ package easy.done;
  *
  * @author Adam
  */
-public class Sqrt_X_69 {
+public class Q0509_FibonnaciNumber {
 
     public static void main(String[] args) {
-        System.out.println(mySqrt(4));
+        System.out.println(fib(9));
     }
 
-    public static int mySqrt(int x) {
-        return (int) Math.sqrt((double) x);
+    public static int fib(int N) {
+        if (N <= 1) {
+            return N;
+        }
+        return fib(N - 1) + fib(N - 2);
     }
 }

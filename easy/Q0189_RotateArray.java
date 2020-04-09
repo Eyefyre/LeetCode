@@ -9,7 +9,7 @@ package easy.done;
  *
  * @author Adam
  */
-public class Rotate_Array_189 {
+public class Q0189_RotateArray {
 
     public static void main(String[] args) {
         int[] nums = {1,4,5,7,8};

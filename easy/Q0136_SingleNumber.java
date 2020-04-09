@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author Adam
  */
-public class Single_Number_136 {
+public class Q0136_SingleNumber {
 
     public static void main(String[] args) {
         int[] nums = {4, 1, 2, 1, 2};

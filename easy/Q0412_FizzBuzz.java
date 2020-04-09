@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author Adam
  */
-public class Fizz_Buzz_412 {
+public class Q0412_FizzBuzz {
 
     public static void main(String[] args) {
         List<String> list = fizzBuzz(100);

@@ -9,16 +9,13 @@ package easy.done;
  *
  * @author Adam
  */
-public class Fibonnaci_Number_509 {
+public class Q1108_DefangingAnIPAddress {
 
     public static void main(String[] args) {
-        System.out.println(fib(9));
+        System.out.println(defangIPaddr(" "));
     }
 
-    public static int fib(int N) {
-        if (N <= 1) {
-            return N;
-        }
-        return fib(N - 1) + fib(N - 2);
+    public static String defangIPaddr(String address) {
+        return address.replaceAll("\\.", "[.]");
     }
 }

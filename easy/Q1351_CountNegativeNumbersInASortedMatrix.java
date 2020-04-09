@@ -9,7 +9,7 @@ package easy.done;
  *
  * @author Adam
  */
-public class Count_Negative_Numbers_in_a_Sorted_Matrix_1351 {
+public class Q1351_CountNegativeNumbersInASortedMatrix {
 
     public static void main(String[] args) {
         int[][] grid = {{4, 3, 2, -1}, {3, 2, 1, -1}, {1, 1, -1, -2}, {-1, -1, -2, -3}};

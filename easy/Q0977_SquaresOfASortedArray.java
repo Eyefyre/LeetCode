@@ -11,7 +11,7 @@ import java.util.Arrays;
  *
  * @author Adam
  */
-public class Squares_of_a_Sorted_Array_977 {
+public class Q0977_SquaresOfASortedArray {
 
     public static void main(String[] args) {
         int[] a = {-4,-1,0,3,10};

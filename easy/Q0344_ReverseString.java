@@ -9,7 +9,7 @@ package easy.done;
  *
  * @author Adam
  */
-public class Reverse_String_344 {
+public class Q0344_ReverseString {
 
     public static void main(String[] args) {
         char[] s = {'h', 'e', 'l', 'a', 'o'};
