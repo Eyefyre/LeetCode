@@ -9,14 +9,12 @@ package CustomObjects;
  *
  * @author Adam
  */
-public class TreeNode {
+public class ListNode {
 
     public int val;
-    public TreeNode left;
-    public TreeNode right;
+    public ListNode next;
 
-    public TreeNode(int x) {
+    public ListNode(int x) {
         val = x;
     }
-
 }
