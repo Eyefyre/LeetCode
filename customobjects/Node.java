@@ -5,18 +5,26 @@
  */
 package CustomObjects;
 
-
+import java.util.List;
 
 /**
  *
  * @author Adam
  */
-public class ListNode {
+public class Node {
 
     public int val;
-    public ListNode next;
+    public List<Node> children;
 
-    public ListNode(int x) {
-        val = x;
+    public Node() {
+    }
+
+    public Node(int _val) {
+        val = _val;
+    }
+
+    public Node(int _val, List<Node> _children) {
+        val = _val;
+        children = _children;
     }
 }

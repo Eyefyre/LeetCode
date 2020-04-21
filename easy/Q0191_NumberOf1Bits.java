@@ -9,16 +9,14 @@ package easy.done;
  *
  * @author Adam
  */
-public class Q0509_FibonnaciNumber {
+public class Q0191_NumberOf1Bits {
 
     public static void main(String[] args) {
-        System.out.println(fib(3));
+        System.out.println(hammingWeight(11001001));
     }
 
-    public static int fib(int N) {
-        if (N <= 1) {
-            return N;
-        }
-        return fib(N - 1) + fib(N - 2);
+    public static int hammingWeight(int n) {
+        return Integer.bitCount(n);
+        
     }
 }

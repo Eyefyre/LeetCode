@@ -6,6 +6,7 @@
 package hard.done;
 
 import CustomObjects.ListNode;
+import Utility.Utility;
 
 /**
  *
@@ -24,14 +25,13 @@ public class Q0023_MergeKSortedLists {
         three.next = new ListNode(6);
         ListNode[] lists = {one,two,three};
         ListNode result = mergeKLists(lists);
-        //print(result);
+        Utility.printListNode(result);
     }
 
     public static ListNode mergeKLists(ListNode[] lists) {
         ListNode result = null;
         for (int i = 0; i < lists.length; i++) {
             result = mergeTwoLists(result,lists[i]);
-            print(result);
         }
         return result;
     }
@@ -52,12 +52,4 @@ public class Q0023_MergeKSortedLists {
         }
     }
 
-    public static void print(ListNode node) {
-        StringBuilder builder = new StringBuilder();
-        while (node != null) {
-            builder.append(node.val);
-            node = node.next;
-        }
-        System.out.println(builder.toString());
-    }
 }

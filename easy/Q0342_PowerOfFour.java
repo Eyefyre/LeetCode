@@ -9,16 +9,19 @@ package easy.done;
  *
  * @author Adam
  */
-public class Q0509_FibonnaciNumber {
+public class Q0342_PowerOfFour {
 
     public static void main(String[] args) {
-        System.out.println(fib(3));
+        System.out.println(isPowerOfFour(5));
     }
 
-    public static int fib(int N) {
-        if (N <= 1) {
-            return N;
+    public static boolean isPowerOfFour(int num) {
+        if (num < 1) {
+            return false;
         }
-        return fib(N - 1) + fib(N - 2);
+        while (num % 4 == 0) {
+            num = num / 4;
+        }
+        return num == 1;
     }
 }

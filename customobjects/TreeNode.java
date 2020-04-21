@@ -19,4 +19,15 @@ public class TreeNode {
         val = x;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("TreeNode{val=").append(val);
+        sb.append(", left=").append(left);
+        sb.append(", right=").append(right);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    
 }

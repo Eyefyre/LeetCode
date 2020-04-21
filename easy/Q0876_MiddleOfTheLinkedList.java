@@ -6,6 +6,7 @@
 package easy.done;
 
 import CustomObjects.ListNode;
+import Utility.Utility;
 
 /**
  *
@@ -21,7 +22,7 @@ public class Q0876_MiddleOfTheLinkedList {
         head.next.next.next.next = new ListNode(5);
         head.next.next.next.next.next = new ListNode(6);
         ListNode middle = middleNode(head);
-        print(middle);
+        Utility.printListNode(middle);
     }
 
     public static ListNode middleNode(ListNode head) {
@@ -37,12 +38,4 @@ public class Q0876_MiddleOfTheLinkedList {
         return slow;
     }
 
-    public static void print(ListNode node) {
-        StringBuilder builder = new StringBuilder();
-        while (node != null) {
-            builder.append(node.val);
-            node = node.next;
-        }
-        System.out.println(builder.toString());
-    }
 }

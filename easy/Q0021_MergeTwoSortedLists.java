@@ -6,7 +6,7 @@
 package easy.done;
 
 import CustomObjects.ListNode;
-
+import Utility.Utility;
 /**
  *
  * @author Adam
@@ -21,7 +21,7 @@ public class Q0021_MergeTwoSortedLists {
         l2.next = new ListNode(3);
         l2.next.next = new ListNode(4);
         ListNode result = mergeTwoLists(l1,l2);
-        print(result);
+        Utility.printListNode(result);
     }
 
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
@@ -38,14 +38,5 @@ public class Q0021_MergeTwoSortedLists {
             l2.next = mergeTwoLists(l1, l2.next);
             return l2;
         }
-    }
-
-    public static void print(ListNode node) {
-        StringBuilder builder = new StringBuilder();
-        while (node != null) {
-            builder.append(node.val);
-            node = node.next;
-        }
-        System.out.println(builder.toString());
     }
 }

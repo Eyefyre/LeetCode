@@ -9,16 +9,19 @@ package easy.done;
  *
  * @author Adam
  */
-public class Q0509_FibonnaciNumber {
+public class Q0326_PowerOfThree {
 
     public static void main(String[] args) {
-        System.out.println(fib(3));
+        System.out.println(isPowerOfThree(9));
     }
 
-    public static int fib(int N) {
-        if (N <= 1) {
-            return N;
+    public static boolean isPowerOfThree(int n) {
+        if (n < 1) {
+            return false;
         }
-        return fib(N - 1) + fib(N - 2);
+        while (n % 3 == 0) {
+            n = n / 3;
+        }
+        return n == 1;
     }
 }

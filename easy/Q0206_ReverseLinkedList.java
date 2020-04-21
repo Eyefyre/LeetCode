@@ -6,7 +6,7 @@
 package easy.done;
 
 import CustomObjects.ListNode;
-
+import Utility.Utility;
 /**
  *
  * @author Adam
@@ -18,9 +18,9 @@ public class Q0206_ReverseLinkedList {
         head.next = new ListNode(1);
         head.next.next = new ListNode(2);
         head.next.next.next = new ListNode(3);
-        print(head);
-        head = reverseList(head);
-        print(head);
+        Utility.printListNode(head);
+        head = reverseListRecursive(head);
+        Utility.printListNode(head);
     }
 
     public static ListNode reverseList(ListNode head) {
@@ -36,13 +36,15 @@ public class Q0206_ReverseLinkedList {
         return head;
     }
 
-    public static void print(ListNode node) {
-        StringBuilder builder = new StringBuilder();
-        while (node != null) {
-            builder.append(node.val);
-            node = node.next;
+    public static ListNode reverseListRecursive(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
         }
-        System.out.println(builder.toString());
+        ListNode rest = reverseListRecursive(head.next);
+        head.next.next = head;
+        head.next = null;
+        return rest;
     }
+
 
 }
