@@ -19,6 +19,14 @@ public class Utility {
         for (int i = 0; i < array.length; i++) {
             builder.append(array[i]).append(",");
         }
+        System.out.println(builder.toString());
+    }
+    public static void printArray(String[] array) {
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < array.length; i++) {
+            builder.append(array[i]).append(",");
+        }
+        System.out.println(builder.toString());
     }
 
     public static void printListNode(ListNode node) {
